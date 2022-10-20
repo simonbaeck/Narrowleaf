@@ -7,7 +7,7 @@
 }
 
 .menu-container {
-    @apply flex flex-col w-[350px] justify-between bg-neutral-900 border-r-[6px] border-r-mainColor;
+    @apply flex flex-col w-[350px] justify-between bg-neutral-900 border-r-[6px] border-r-mainColor overflow-y-auto;
 }
 
 .menu-logo {
@@ -63,7 +63,7 @@
 }
 
 .app-container .main-container {
-    @apply flex flex-col w-full p-10;
+    @apply flex flex-col w-full p-10 h-screen overflow-y-auto;
 }
 
 .app-container .main-container h1 {
@@ -194,4 +194,45 @@ button.primary {
 
 button.secondary {
     @apply bg-mainColor hover:bg-opacity-90 px-4 py-3 text-white font-bold rounded-md;
+}
+
+
+/* width */
+.menu-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+.menu-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+.menu-container::-webkit-scrollbar-thumb {
+    background: #545454;
+}
+
+/* Handle on hover */
+.menu-container::-webkit-scrollbar-thumb:hover {
+    background: #383838;
+}
+
+/* width */
+.main-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.main-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.main-container::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+.main-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
