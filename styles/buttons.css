@@ -1,0 +1,8 @@
+button {
+    @apply text-white px-4 py-2 rounded-md text-1xl font-medium transition duration-300
+}
+
+button, .purple {
+    @apply bg-purple-600 hover:bg-purple-800
+}
+

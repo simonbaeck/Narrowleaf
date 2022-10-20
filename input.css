@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app-container {
+    @apply flex flex-row h-screen bg-neutral-100;
+}
+
+.menu-container {
+    @apply flex flex-col w-[350px] justify-between bg-neutral-900 border-r-[6px] border-r-mainColor;
+}
+
+.menu-logo {
+    @apply w-[75px] h-[75px] my-12 mx-auto;
+}
+
+.menu-container nav {
+    @apply flex flex-col;
+}
+
+.menu-container nav span {
+    @apply text-neutral-500 font-bold text-xs ml-6 mb-2 uppercase;
+}
+
+.menu-container nav ul {
+    @apply flex flex-col w-full text-white;
+}
+
+.menu-container nav ul li {
+    @apply flex flex-row items-center py-4 px-6 hover:bg-neutral-800 hover:text-mainColor hover:cursor-pointer;
+}
+
+.profile-section {
+    @apply flex flex-row gap-x-3 bg-neutral-800 p-4;
+}
+
+.profile-info {
+    @apply flex flex-row w-full justify-start items-center gap-x-3;
+}
+
+.profile-info-avatar {
+    @apply w-[40px] h-[40px] rounded-full;
+}
+
+.profile-info-details {
+    @apply flex flex-col gap-y-0.5 justify-center;
+}
+
+.profile-info-details span {
+    @apply text-neutral-500 font-bold text-xs uppercase;
+}
+
+.profile-info-details p {
+    @apply text-white text-xs text-ellipsis overflow-hidden;
+}
+
+.profile-logout {
+    @apply flex flex-row items-center justify-center;
+}
+
+.profile-logout a {
+    @apply p-3 bg-neutral-900 hover:bg-red-700 hover:cursor-pointer inline-flex text-white font-bold rounded-md;
+}
+
+.app-container .main-container {
+    @apply flex flex-col w-full p-10;
+}
+
+.app-container .main-container h1 {
+    @apply font-bold text-2xl mb-5;
+}
+
+.cards-container {
+    @apply flex flex-col gap-y-4;
+}
+
+.cards-row {
+    @apply flex flex-row w-full gap-x-6;
+}
+
+.card-vertical {
+    @apply flex flex-col shadow rounded-b-md;
+}
+
+.card-vertical img {
+    @apply bg-blue-300 max-w-[400px] w-[400px] max-h-[225px] rounded-t-md object-cover;
+}
+
+.card-vertical-info {
+    @apply bg-white w-full p-6 flex flex-col gap-y-3 rounded-b-md;
+}
+
+.card-vertical-info .title {
+    @apply font-bold text-xl;
+}
+
+.card-horizontal {
+    @apply flex flex-row shadow rounded-r-md w-full;
+}
+
+.card-horizontal img {
+    @apply bg-blue-300 w-[175px] h-[175px] max-w-[175px] max-h-[175px] object-cover rounded-l-md;
+}
+
+.card-horizontal-info {
+    @apply bg-white w-full p-6 flex flex-col gap-y-3 rounded-r-md;
+}
+
+.card-horizontal-info .title {
+    @apply font-bold text-xl;
+}
+
+.main-content {
+    @apply bg-white shadow rounded-md flex flex-col w-full p-6 gap-y-4;
+}
+
+.modal-overlay {
+    @apply flex-col justify-center overflow-hidden absolute items-center w-full h-full bg-gray-900 bg-opacity-80 shadow left-0 top-0 fixed;
+}
+
+.modal-content-container {
+    @apply bg-white shadow rounded-md flex flex-col w-[450px];
+}
+
+.modal-content-container .top {
+    @apply m-6;
+}
+
+.modal-content-container .top h1 {
+    @apply text-black font-bold text-lg pb-3;
+}
+
+.modal-content-container .bottom {
+    @apply flex flex-row w-full justify-between gap-x-3 bg-neutral-100 p-4 rounded-b-md;
+}
+
+.input-form {
+    @apply flex flex-col gap-y-3;
+}
+
+.input-form .input-group {
+    @apply flex flex-row w-full gap-x-6;
+}
+
+.input-form .input-group .input-content {
+    @apply flex flex-col w-full gap-y-2;
+}
+
+.input-form .input-group .input-content input[type="text"],
+.input-form .input-group .input-content input[type="email"],
+.input-form .input-group .input-content input[type="password"] {
+    @apply border-[1px] border-neutral-300 rounded-md px-3 py-2;
+}
+
+.table-content {
+    @apply bg-white shadow rounded-md flex flex-col w-full;
+}
+
+.table-content table {
+    @apply w-full overflow-x-scroll rounded-md mb-2;
+}
+
+.table-content table thead tr {
+    @apply bg-mainColor text-white;
+}
+
+.table-content table thead tr th {
+    @apply py-4 px-3 text-left;
+}
+
+.table-content table thead tr th:first-child {
+    @apply rounded-tl-md;
+}
+
+.table-content table thead tr th:last-child {
+    @apply rounded-tr-md;
+}
+
+.table-content table tbody tr {
+    @apply odd:bg-white even:bg-neutral-100 border-b-[1px] border-neutral-200;
+}
+
+.table-content table tbody tr:last-child {
+    @apply border-b-0;
+}
+
+.table-content table tbody tr td {
+    @apply py-4 px-3;
+}
+
+button.primary {
+    @apply bg-secondColor hover:bg-opacity-90 px-4 py-3 text-white font-bold rounded-md;
+}
+
+button.secondary {
+    @apply bg-mainColor hover:bg-opacity-90 px-4 py-3 text-white font-bold rounded-md;
+}
